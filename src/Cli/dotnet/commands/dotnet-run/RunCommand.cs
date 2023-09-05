@@ -43,6 +43,7 @@ namespace Microsoft.DotNet.Tools.Run
 
             if (ShouldBuild)
             {
+                // Why not always output this?
                 if (string.Equals("true", launchSettings?.DotNetRunMessages, StringComparison.OrdinalIgnoreCase))
                 {
                     Reporter.Output.WriteLine(LocalizableStrings.RunCommandBuilding);
